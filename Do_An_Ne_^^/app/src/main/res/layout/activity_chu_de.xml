@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChuDe">
+
+    <Button
+        android:id="@+id/btnlichsu"
+        android:layout_width="249dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="100dp"
+        android:background="#00695C"
+        android:text="Lịch Sử - Địa Lý"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/btnthethao" />
+
+    <Button
+        android:id="@+id/btnthethao"
+        android:layout_width="249dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="100dp"
+        android:background="#F9A825"
+        android:text="Thể Thao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/btnvanhoa" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Chọn Chủ Đề"
+        android:textColor="#00695C"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/chude2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="76dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/chude4" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="78dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="262dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/chude1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="79dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="360dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/chude3" />
+
+    <Button
+        android:id="@+id/btnkhoahoc"
+        android:layout_width="249dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="116dp"
+        android:background="#558B2F"
+        android:text="Khoa Học "
+        android:textColor="#0E0816"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnvanhoa"
+        android:layout_width="249dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="96dp"
+        android:background="#D84315"
+        android:text="Văn Hóa - Xã Hội - Nghệ Thuật"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/btnkhoahoc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

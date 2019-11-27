@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/igv1"
+        android:layout_width="263dp"
+        android:layout_height="210dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/igv"
+        android:layout_width="53dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/igv1"
+        app:srcCompat="@drawable/icontien" />
+
+    <Button
+        android:id="@+id/btndangki1"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Chơi Luôn"
+        android:textColor="#081722"
+        android:textColorHint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnhuy1"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FF3D00"
+        android:text="Quản Lý"
+        android:textColor="#081722"
+        android:textColorHint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btndangki1" />
+
+    <Button
+        android:id="@+id/btnluatchoi1"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#AD1457"
+        android:text="Luật Chơi"
+        android:textColor="#081722"
+        android:textColorHint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnhuy1" />
+
+    <Button
+        android:id="@+id/btnlichsu"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#558B2F"
+        android:text="Lịch Sử-Xép Hạng"
+        android:textColor="#081722"
+        android:textColorHint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnluatchoi1" />
+
+    <Button
+        android:id="@+id/btnmuacredit1"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Mua Credit"
+        android:textColor="#081722"
+        android:textColorHint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlichsu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="218dp"
+        android:text="PhungHieuDong"
+        android:textColor="#1565C0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/igv1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:text="5000"
+        android:textColor="#EB0000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toEndOf="@+id/igv"
+        app:layout_constraintTop_toTopOf="@+id/igv1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
