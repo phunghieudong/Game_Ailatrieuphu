@@ -156,4 +156,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
 
+    <ImageView
+        android:id="@+id/imageViewnhac1"
+        android:layout_width="70dp"
+        android:layout_height="82dp"
+        android:src="@drawable/play"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-5dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -133,4 +133,14 @@
         app:layout_constraintStart_toEndOf="@+id/igv2"
         app:layout_constraintTop_toTopOf="@+id/btnhuy1" />
 
+    <ImageView
+        android:id="@+id/imageViewplay"
+        android:layout_width="72dp"
+        android:layout_height="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imalogo1"
+        app:srcCompat="@drawable/play" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

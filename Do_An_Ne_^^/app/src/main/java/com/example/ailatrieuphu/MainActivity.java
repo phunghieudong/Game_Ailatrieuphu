@@ -6,10 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     EditText TaiKhoan, MatKhau;
     Button DangNhap,DangKi,Quen,Huy;
     String ten,mk;
+    MediaPlayer mediaPlayer;
+    ImageView play;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +30,13 @@ public class MainActivity extends AppCompatActivity {
         AnhXa();
         ControlButton();
 
+
+        mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.tttt);
+        mediaPlayer.start();
+
     }
 
+    // nhac
     //Làm nút hủy
     private void ControlButton() {
         Huy.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +65,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(mediaPlayer.isPlaying()){
+                    mediaPlayer.pause();
+                    play.setImageResource(R.drawable.play);
+                }else
+                {
+                    mediaPlayer.start();
+                    play.setImageResource(R.drawable.pause);
+                }
+            }
+        });
         // Cái này để chuyển qua cái trang đăng kí nè
         DangKi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,5 +153,7 @@ public class MainActivity extends AppCompatActivity {
         DangKi =(Button) findViewById(R.id.btndangki1);
         Quen =(Button) findViewById(R.id.btndangnhap1);
         Huy =(Button) findViewById(R.id.btnhuy1);
+        play = (ImageView) findViewById(R.id.imageViewplay);
+
     }
 }
